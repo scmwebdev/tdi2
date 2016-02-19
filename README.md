@@ -1,6 +1,6 @@
 # The Dance Icon 2 - SCTV
 
-## File Structure
+**File Structure**
 
 ```
 tdi2 --- app/
