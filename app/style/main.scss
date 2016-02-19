@@ -15,12 +15,24 @@
             overflow: hidden;
             img {
                 @extend .__fullwidth;
-                @media only screen 
-                and (orientation: portrait)
-                and (max-width: 767px) {
-                	height: 400px;
+                @media only screen and (orientation: portrait) and (max-width: 767px) {
+                    height: 400px;
                 }
             }
         }
     }
-   
+    
+    .thedanceicon2-quiz {
+        .choice {
+        	@extend .row;
+            &-list {
+                text-align: center;
+                .btn {
+                    font-size: 2em;
+                    text-transform: capitalize;
+                    @extend .__fullwidth;
+                    @extend .__spacemar;
+                }
+            }
+        }
+    }
