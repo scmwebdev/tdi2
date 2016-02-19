@@ -15,10 +15,12 @@
             overflow: hidden;
             img {
                 @extend .__fullwidth;
-                height: 300px;
-                @media (min-width: 768px) {
-                    height: 600px;
+                @media only screen 
+                and (orientation: portrait)
+                and (max-width: 767px) {
+                	height: 400px;
                 }
             }
         }
     }
+   
