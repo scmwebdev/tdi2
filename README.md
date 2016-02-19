@@ -2,6 +2,7 @@
 
 ## File Structure
 
+```
 tdi2 --- app/
      |
      --- node_modules/
@@ -11,3 +12,4 @@ tdi2 --- app/
      --- gulpfile.js
      |
      --- package.json
+```
