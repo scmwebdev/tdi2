@@ -1,12 +1,10 @@
 <!doctype html>
-
 <!--[if IE 8]>         <html class="no-js lt-ie9" lang="en"> <![endif]-->
 <!--[if gt IE 8]><!-->
 <html class="no-js" lang="en">
 <!--<![endif]-->
 
 <head>
-    <meta name="robots" content="noindex"> <!-- prevent search engine crawl -->
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -30,7 +28,7 @@
     <link rel="stylesheet" href="http://www.sctv.co.id/assets/css/auth-buttons.css">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-    <link rel="stylesheet" href="../files/webpage/tdi/thedanceicon.min.css">
+    <link rel="stylesheet" href="http://www.sctv.co.id/files/webpage/tdi/thedanceicon.min.css">
     <script src="http://www.sctv.co.id/assets/js/vendor/modernizr.min.js"></script>
     <script>
     (function(i, s, o, g, r, a, m) {

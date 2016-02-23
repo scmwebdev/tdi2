@@ -1,7 +1,7 @@
-    @import 'partial/partial';
+@import 'partial/partial';
     .site-main {
         position: relative;
-        top: 0;
+        top: -50px;
     }
     
     .section-content {
@@ -10,32 +10,40 @@
         }
     }
     
-    .thedanceicon2 {
-        &-banner {
-            overflow: hidden;
-            img {
-                @extend .__fullwidth;
-                @media only screen and (orientation: portrait) and (max-width: 767px) {
-                    height: 400px;
-                }
-            }
+    .util-nav__item > a {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+    .icon-text {
+        transform: translateY(-80%);
+    }
+.thedanceicon2 {
+    &-banner {
+        overflow: hidden;
+        max-height: 600px;
+        @media only screen and (orientation: portrait) and (max-width: 767px) {
+            padding-top: 3em;
+        }
+        img {
+            @extend .__fullwidth;
         }
     }
-    
-    .thedanceicon2-quiz {
-        .choice {
-        	@extend .row;
-            &-list {
-                text-align: center;
-                .btn {
-                    font-size: 2em;
-                    text-transform: capitalize;
-                    @extend .__fullwidth;
-                    @extend .__spacemar;
-                }
-            }
-            .answer {
+}
+.thedanceicon2-quiz {
+    .choice {
+        @extend .row;
+        &-list {
+            text-align: center;
+            .btn {
+                font-size: 2em;
                 text-transform: capitalize;
+                @extend .__fullwidth;
+                @extend .__spacemar;
             }
         }
+        .answer {
+            text-transform: capitalize;
+        }
     }
+}
