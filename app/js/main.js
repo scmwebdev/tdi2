@@ -1,22 +1,27 @@
 function customTweet() {
 
-    /* UBAH PILIHAN DISINI  */
-    var pilihan_1 = 'A. fero';
-    var pilihan_2 = 'B. Galuh';
-    var pilihan_3 = 'C. Alfi';
-    /* UBAH PILIHAN DISINI  */
-    
-
+    // set the supporting text
     var frontText = '?text=Gue pilih jawaban ';
     var backText = ' Ayo ikutan di http://www.sctv.co.id/tdi #TheDanceIcon2';
-    var choice_one = frontText + pilihan_1 + backText;
-    var choice_two = frontText + pilihan_2 + backText;
-    var choice_three = frontText + pilihan_3 + backText;
-    var arr = [choice_one, choice_two, choice_three];
-    for(i = 0; i<arr.length;i++) {
 
-        /* replace whitespace, '#', ':', '/' with system friendly characters */
-        var newStr = arr[i].replace(/\s/g, '+').replace(/#/i, '%23').replace(/:/g, '%3A').replace(/\//g, '%2F');
+    // store the choice in a variable
+    var target = $('.choice > .choice-list');
+
+    // create an array that will store the answer
+    var jawaban = [];
+
+    /* grab each answer and combine it with the supporting text
+    and lastly push it into the array */
+    $.each(target, function(i){
+        var getAnswer = $(this).find('.answer').text();
+        var newAnswer = frontText + getAnswer + backText;
+        jawaban.push(newAnswer);
+    });
+
+    for(i = 0; i<jawaban.length;i++) {
+
+        /* replace whitespace, '#', ':', '/' with URL friendly characters */
+        var newStr = jawaban[i].replace(/\s/g, '+').replace(/#/i, '%23').replace(/:/g, '%3A').replace(/\//g, '%2F');
 
         // plus 1 for the i for child selectors
         var child = i + 1;

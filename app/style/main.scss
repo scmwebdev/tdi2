@@ -34,5 +34,8 @@
                     @extend .__spacemar;
                 }
             }
+            .answer {
+                text-transform: capitalize;
+            }
         }
     }

@@ -37,7 +37,8 @@ gulp.task('sass', function() {
         }))
         .pipe(autoprefixer())
         .pipe(sourcemaps.write())
-        .pipe(gulp.dest('app/')) //output the file at root (app/)
+        .pipe(gulp.dest('app/'))
+        .pipe(gulp.dest('app/dist')) //output the file at root (app/)
         .pipe(reload({stream: true}));
 });
 
@@ -55,6 +56,7 @@ gulp.task('js', function() {
             suffix: '.min'
         }))
         .pipe(gulp.dest('app/'))
+        .pipe(gulp.dest('app/dist'))
         .pipe(reload({ stream: true }));
 });
 
