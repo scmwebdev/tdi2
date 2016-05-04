@@ -21,7 +21,7 @@ gulp.task('browserSync', function() {
         // server: {
         //     baseDir: 'app'
         // },
-        proxy: 'localhost/tdi2/app',
+        proxy: 'localhost:8888/tdi2/app',
         notify: 'false'
     });
 });
@@ -44,9 +44,12 @@ gulp.task('sass', function() {
 
 gulp.task('js', function() {
     return gulp.src([
+            './node_modules/jquery/dist/jquery.js',
             './app/js/*.js'
+            
         ])
         .pipe(plumber())
+        .pipe(concat('main.js'))
         .pipe(rename({
             basename: 'thedanceicon'
         }))
